@@ -1,4 +1,63 @@
 <!DOCTYPE html>
+<?php
+
+      if(isset($_GET['id'])){
+
+          print_r($_GET); // Skoðum GET
+
+          // Sækjum gildi úr GET
+          $id = $_GET["id"];
+
+          if($id == 1){
+              $img = "1.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 2){
+              $img = "2.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 3){
+              $img = "3.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 4){
+              $img = "4.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 5){
+              $img = "5.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 6){
+              $img = "6.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 7){
+              $img = "7.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+          if($id == 8){
+              $img = "8.jpg";
+              $expire = time()+(60*60*24*7); // látum lifa í 1 viku.
+              // búum til cookie til að senda með page request næst til miðlara
+              setcookie("pic", $img, $expire);
+          }
+      } 
+?>
 <html>
 <head>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +69,9 @@
 	  <title>FlexBox - Verkefni</title>
     <?php 
       $_POST = array('slod' => 'myndir/eitttre.jpg','slod2' => 'myndir/glasses.jpg');
+      $cookie_name = "userback";
+      $cookie_value = "Velkominn Aftur";
+      setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
     ?>
 </head>
 <body>
@@ -30,14 +92,19 @@
       </header>
       <main class="main">
         <form action="welcome.php" method="get">
-        Name: <input type="text" name="name" class="input"><br>
-        E-mail: <input type="text" name="email" class="input"><br>
+        Username: <input type="text" name="name" class="input" style="font-family:Arial, Georgia, Serif"><br>
+        Password: <input type="password" name="email" class="input" style="font-family:Arial, Georgia, Serif"><br>
         <input type="submit">
         </form>
       </main><!--tre.php?img=Tre-->
       <?php
           $path = $_POST['slod'];
           $path2 = $_POST['slod2'];
+          if(!isset($_COOKIE[$cookie_name])) {
+               echo "Halló nýi notandi";
+          } else {
+               echo $_COOKIE[$cookie_name];
+          }
         ?>
         <aside>
         <a href="tre.php?name=Mynd+af+tré">
@@ -49,7 +116,49 @@
           <a href="gleraugu.php?name=Mynd+af+gleraugum">
             <input type="image" src=<?= $path2?> style="width:400px;height:267px;" alt="Mynd af gleraugum"/>
           </a>
+          <a href="tre.php?name=Mynd+af+tré">
+              <input type="image" src=<?= $path?> style="width:300px;height:400px;" alt="Mynd af tré"/>
+          </a>
+          <!--|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-->
+          <a href="login.php?id=1">
+            <input type="image" src="myndir/1.jpg" style="width:100px;height:100px;" alt="1"/>
+          </a>
+          <a href="login.php?id=2">
+            <input type="image" src="myndir/2.jpg" style="width:100px;height:100px;" alt="2"/>
+          </a>
+          <a href="login.php?id=3">
+            <input type="image" src="myndir/3.jpg" style="width:100px;height:100px;" alt="3"/>
+          </a>
+          <a href="login.php?id=4">
+            <input type="image" src="myndir/4.jpg" style="width:100px;height:100px;" alt="4"/>
+          </a>
+          <a href="login.php?id=5">
+            <input type="image" src="myndir/5.jpg" style="width:100px;height:100px;" alt="5"/>
+          </a>
+          <a href="login.php?id=6">
+            <input type="image" src="myndir/6.jpg" style="width:100px;height:100px;" alt="6"/>
+          </a>
+          <a href="login.php?id=7">
+            <input type="image" src="myndir/7.jpg" style="width:100px;height:100px;" alt="7"/>
+          </a>
+          <a href="login.php?id=8">
+            <input type="image" src="myndir/8.jpg" style="width:100px;height:100px;" alt="8"/>
+          </a>
         </aside>
+        <div>
+            <?php
+                $output = "";
+                $mynd = "";
+                // athugum hvort cookie er til
+                if(isset($_COOKIE['pic'])){
+                    $output = "<h2>Nýlega skoðað</h2>";
+                    // sækjum gildið úr cookie   
+                    $mynd = $_COOKIE['pic'];     
+                    // birtum mynd
+                    echo $output . "<img src=\"myndir/{$mynd}\" style=\"width:100px;height:100px;\">"; 
+                }   
+            ?>
+        </div>
     </div>
   </body>
 </html>

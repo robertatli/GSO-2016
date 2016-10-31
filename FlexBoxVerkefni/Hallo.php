@@ -11,14 +11,11 @@
 
 $titles = array(); 
 
-$titles[] = "Sæll"; 
-$titles[] = "Þú aftur"; 
-$titles[] = "Afhverju?";
-$titles[] = "Sjáðu þetta";
-$titles[] = "Epli bragðast eins og epli";
-$titles[] = "Myndirnar hreifast";
-$titles[] = "Fjöll og tré";   
-$titles[] = "súpan er búin";  
+$titles[] = "Gleðileg Jól"; 
+$titles[] = "Harpan heldur uppá jólin með þér"; 
+$titles[] = "Jólasöngur";
+$titles[] = "Jólafjör";
+$titles[] = "Jólasveinar einn og átta";
 
 srand ((float) microtime() * 10000000); // Seed the random number generator 
 

@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: #fffafa;
 }
 @font-face{
   font-family: 'Raleway-Normal';
@@ -7,6 +7,7 @@ body{
 }
 
 @media all and (min-width:48em){
+  /*----------------------------------------Banner-------------------------------------------*/
 .wrap-center{
   margin: 0 auto;
   position: relative;
@@ -33,26 +34,14 @@ body{
   font-weight: 100;
   display: block;
 }
-  /*--------------------------------------------------*/
- .navigation {
-    list-style: none;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-end;
-    background-color: #130d0a;
-  }
-
+/*----------------------------------------//Banner//-------------------------------------------*/
 .input{
   color: black;
 }
 .textmanager{
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 24px;
 }
 ul, menu, dir {
     display: block;
@@ -63,51 +52,11 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
+  /*----------------------------------------Navigation-------------------------------------------*/
 
-.navigation{
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-    position: fixed;
-    right: 0;
-}
-.navigation{
-      top: 0;
-      width: 530px;
-}
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-  transition: background-color 0.5s ease;
-}
 
-.navigation a:hover {
-  background-color:white;
-  color:black;
-}
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-@media all and (max-width: 600px) {
-  .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
 
-  }
-
-  .navigation a {
-    text-align: center;
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-}
 .menu{
   display: none;
   }
@@ -115,10 +64,66 @@ ul, menu, dir {
     display: none;
 }
 }
+.navigation li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+        .navigation li:hover ul
+        {
+            display: block;
+        }
+        .navigation li ul li{
+            background-color: #fffafa;
+            list-style: none;
+            color: black;
+            transition: background-color 0.5s ease;
+        }
+ .navigation {
+  z-index: 99999;
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: #fffafa;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 225px;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: black;
+  transition: background-color 0.5s ease;
+}
+
+.navigation a:hover {
+  background-color:black;
+  color:#fffafa;
+}
+
+
+
+
+
+/*--------------------------------------------//Navigation//-----------------------------------------------*/
 @media all and (max-width: 1160px){
+  /*----------------------------------------Banner-------------------------------------------*/
+
   .banner-centered h2 {
   margin-top:300px;
-  font-size: 4.385em;
+  font-size: 1em;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -137,7 +142,7 @@ ul, menu, dir {
   flex-flow: row wrap;
   flex-direction: column;
   text-align: center;
-  background-color: #130d0a;
+  background-color: #fffafa;
   animation-name: fadeout;
   animation-delay: 0.5s;
   animation-duration: 2s;
@@ -145,15 +150,16 @@ ul, menu, dir {
   animation-fill-mode: forwards;
 }
 @keyframes fadeout{
-  from {background-color: #130d0a;}
+  from {background-color: #fffafa;}
   to {background-color: transparent;}
 }
 .wrapper > * {
-  background-color: #130d0a;
+  background-color: #fffafa;
   font-family: 'Raleway-Normal';
   padding: 10px;
   flex: 1 100%;
 }
+
 
 @media all and (min-width: 600px) {
   .aside {
@@ -161,9 +167,12 @@ ul, menu, dir {
   }
 }
 body .wrapper{
-  color: white;
+  color: black;
   font-family: 'Raleway-Normal';
 }
+/*----------------------------------------//Banner//-------------------------------------------*/
+/*----------------------------------------Parallax-------------------------------------------*/
+
 .parallax-window {
   min-height: 200px;
   background: transparent;
@@ -172,6 +181,9 @@ body .wrapper{
   height: 1080px;
   background: transparent;
 }
+
+/*----------------------------------------//Parallax//-------------------------------------------*/
+/*----------------------------------------Fade-in @keyframes-------------------------------------------*/
 #hidden {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -208,7 +220,7 @@ body .wrapper{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
+/*----------------------------------------//Fade-in @keyframes//-------------------------------------------*/
 @media all and (max-width: 48em){/*----------------------------Menubar------------------------------*/
   .wrap-center{
   margin: 0 auto;
@@ -247,19 +259,21 @@ body .wrapper{
 }
 
 .banner-centered h2 {
-  margin-top:20px;
-  font-size: 4.385em;
-  line-height: 1.5;
+  -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: black;
+  margin-top:200px;
+  line-height: 2;
+  font-size: 9vw;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #fafafa;
   font-weight: 50;
   display: block;
 }
   .menu{
-    color: white;
+    color: #3F3F3F;
     background: transparent;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     bottom: 10px;
     left: 15px;
@@ -286,7 +300,7 @@ body .wrapper{
 /* Position the content inside the overlay */
 #overlay-content {
     position: relative;
-    bottom: -14%; /* 25% from the top */
+    bottom: -5%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 0; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -325,6 +339,5 @@ body .wrapper{
         left: 20px;
       }
       
-    }
-
   }
+}

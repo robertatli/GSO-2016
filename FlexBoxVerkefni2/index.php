@@ -18,11 +18,11 @@
 	<link rel="stylesheet" href="./css/stilsida.css">
 	<link rel="stylesheet" href="./css/normalize.css">
   <script type="bootstrap.min.js"></script>
-  <script src="overlaymenu.js"></script>
+  <script src="js/overlaymenu.js"></script>
   <script type="navcollapse.js"></script>
   <script src="parallax.js-1.4.2/parallax.js"></script>
   <script src="newfolder/smooth-scroll-master/dist/js/smooth-scroll.js"></script>
-  <script src="snowstorm-min.js"></script>
+  <script src="js/snowstorm-min.js"></script>
   <meta charset="utf-8">
   <script>
     snowStorm.followMouse = false;
@@ -44,13 +44,14 @@
 <div class="annad">
   
     <ul class="navigation">
-      
+      <li><a href="https://www.harpa.is/">Harpan</a></li>
+      <li><a href="Happdraetti.php" class="z">Jólaleikur</a></li>
       <li><a href="login.php">PHP</a></li>
-      <li><a data-scroll href="#VSH" onclick="closeNav()">VSH</a></li>
+      <li><a data-scroll href="#VSH">VSH</a></li>
     </div>
     <div class="fela">
       <li>
-        <a data-scroll href="#" onclick="closeNav()" class="opna">Sýningar</a>
+        <a data-scroll href="#" class="opna">Sýningar</a>
         <ul  id="overlay-content">
 
 
@@ -108,7 +109,10 @@ Einsöngvarar jólatónleikanna, Hulda Björk Garðarsdóttir og Kolbrún Völku
 
 <p>Kynnir tónleikana er trúðurinn Barbara sem mun á sinn einlæga og óviðjafnanlega hátt tendra ljós í hverju tónleikahjarta. Tónleikarnir verða túlkaðir á táknmáli.</p>
 
-<strong>dagsetningar: Lau. 13. des. >> 14:00 || Lau. 13. des. >> 16:00 || Lau. 14. des. >> 14:00<br>Verð frá: 2500 - 7200</strong><br><br>
+<strong>dagsetningar: Lau. 13. des. >> 14:00 || Lau. 13. des. >> 16:00 || Lau. 14. des. >> 14:00<br>Verð frá: 2500 - 7200</strong><br>
+<form action="https://www.tix.is/is/harpa/buyingflow/tickets/2904/">
+    <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+</form>
 </div></aside></span> <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
       
       <div class="parallax-window-header" data-parallax="scroll" data-bleed="0" data-speed="0.5" data-image-src="myndir/HKJ2.jpg" data-natural-width="1400"><span id="krijoh"></span>
@@ -125,7 +129,10 @@ Einsöngvarar jólatónleikanna, Hulda Björk Garðarsdóttir og Kolbrún Völku
 
 Efnisskrá tónleikanna er sérlega glæsileg en <strong>Kristján Jóhannsson, Dísella Lárusdóttir, Elmar Gilbertsson, Oddur Arnþór Jónsson og Hrafnhildur Árnadóttir</strong> flytja eftirlætis óperuaríur og hátíðleg jólalög ásamt <strong>Óperukórnum í Reykjavík og Karlakór Kópavogs</strong> við undirleik <strong>sinfóníuhljómsveitar</strong> undir stjórn <strong>Garðars Cortes.</strong>
 <p><strong>03. desember 2016 20:00<br>
-Verð frá: 4500 - 12900</strong></p><br>
+Verð frá: 4500 - 12900</strong></p>
+<form action="https://www.tix.is/is/harpa/buyingflow/tickets/3277/">
+    <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+</form>
       </div></article> </span> 
 <!--////////////////////////////////////////////////////////////////////////////////////////////////-->
        
@@ -145,6 +152,9 @@ Verð frá: 4500 - 12900</strong></p><br>
 
         <p><strong>04. desember 2016 14:00<br>
 Almenn miðaverð kr. 3.900 - en kr. 1.900- fyrir eldriborgara, öryrkja og börn í grunnskóla ( miðar seldir í miðasölu Hörpu)</strong></p>
+<form action="https://www.tix.is/is/harpa/buyingflow/tickets/3015/">
+    <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+</form>
 
 </div></aside> </span>
 <!--////////////////////////////////////////////////////////////////////////////////////////////////--> 
@@ -159,6 +169,9 @@ Almenn miðaverð kr. 3.900 - en kr. 1.900- fyrir eldriborgara, öryrkja og bör
           </div>
         </div>
         <aside class="aside aside-2"><div class="textmanager"><p><strong>Stefán Hilmarsson</strong> heldur árlega jólatónleika sína í Silfubergi í Hörpu 8. og 9. desember. Sérstakir gestir <strong>Stefáns</strong> í ár verða Jón Jónsson, <strong>Jóhanna Guðrún og Ísold Wilberg</strong>, ung söngkona sem er að stíga sín fyrstu skref.</p><p> Á tónleikunum verða að vanda flutt lög af jólaplötum Stefáns, <strong>„Í desember“</strong> og <strong>„Ein handa þér“</strong>, í bland við sérvalin stemmnings- og hátíðarlög af ýmsum toga. Hljómsveitin verður skipuð annáluðum sérfræðingum og galdramönnum.</p><p><strong>Verð frá: 6990<br>08. desember 2016 | kl. 20:00 - 09. desember 2016 | kl. 20:00</strong></p></div></aside> </span>
+        <form action="https://www.tix.is/is/harpa/buyingflow/tickets/3273/">
+            <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+        </form>
 
         <!--////////////////////////////////////////////////////////////////////////////////////////////////--> 
 
@@ -181,6 +194,9 @@ Almenn miðaverð kr. 3.900 - en kr. 1.900- fyrir eldriborgara, öryrkja og bör
 
         <p>Með <strong>Siggu</strong> koma fram góðir gestir ásamt landsliði tónlistarmanna og tónninn sem gefinn er er einlægur og hlýr - eins og <strong>Sigga</strong> sjálf.</p>
         <p><strong>Verð frá: 5490 - 9990</strong><br><strong>09. desember 2016 | kl. 21:00 - 10. desember 2016 | kl. 21:00</strong></p></div></aside> </span>
+        <form action="https://www.tix.is/is/harpa/buyingflow/tickets/3213/">
+            <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+        </form>
 
         <!--////////////////////////////////////////////////////////////////////////////////////////////////--> 
 
@@ -199,6 +215,9 @@ Almenn miðaverð kr. 3.900 - en kr. 1.900- fyrir eldriborgara, öryrkja og bör
         <p>Að þessu sinni slást tónlistarmenn á heimsmælikvarða með í för, sem hafa margir hverjir unnið með mörgum helstu stjörnum heims, þeirra á meðal eru <strong>Wayne Hernandez</strong> (Tina Turner Madonna, Yusuf Islam) <strong>Sam White</strong> (Duran Duran, David Gray, Annie Lennox) og <strong>Phebe Edwards</strong> (Rod Stewart, Adele, Donna Summer.)</p>
 
         <p>Það má því búast við einstaklega vönduðum og skemmtilegum tónleikunum, en að þessu sinni verða flutt kraftmikil og sálarskotin dægurlög ásamt gömlu góðu og klassísku jólalögunum sem lokka fram jólastemninguna ár eftir ár.</p></div></aside> </span>
+        <form action="https://www.tix.is/is/harpa/buyingflow/tickets/2874/">
+            <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+        </form>
 
         <!--////////////////////////////////////////////////////////////////////////////////////////////////--> 
 
@@ -212,6 +231,9 @@ Almenn miðaverð kr. 3.900 - en kr. 1.900- fyrir eldriborgara, öryrkja og bör
           </div>
         </div>
         <aside class="aside aside-2"><div class="textmanager"><p>Á <strong>jólatónleikum Sinfóníunnar</strong> er hátíðleikinn í fyrirrúmi og þar eiga sígildar jólaperlur fastan sess. Nýr forleikur með jólalögum frá Norðurlöndunum og Sleðaferð Andersons gefa upptaktinn að tónleikunum ásamt gullfallegri túlkun nemenda Listdansskólans á Blómavalsi Tsjajkovskíjs og flutningi <strong>Bjöllukórs Tónlistarskóla Reykjanesbæjar</strong> á hinu sígilda íslenska jólalagi Jólin alls staðar. Skólahljómsveit Kópavogs flytur sívinsælt lag <strong>Gunnars Þórðarsonar</strong> Aðfangadagskvöld og ungir einleikarar koma fram í hinu ægifagra Panis Angelicus. Einsöngvarar ásamt kórum úr Langholtskirkju og táknmálskór flytja úrval innlendra og erlendra jólalaga sem koma öllum í sannkallað hátíðarskap. Trúðurinn Barbara kynnir tónleikana af sinni alkunnu snilld en tónleikarnir eru einnig túlkaðir á táknmáli. Nemendur úr <strong>Skólahljómsveit Kópavogs</strong> og <strong>Bjöllukór Tónlistarskóla Reykjanesbæjar</strong> flytja jólalög á undan tónleikunum. </p></div></aside> </span>
+        <form action="https://www.tix.is/is/harpa/buyingflow/tickets/2905/">
+            <strong><input type="submit" value="Kaupa miða" class="button" /></strong>
+        </form>
 
        <!--<span id="Footer">
       <footer class="footer"><br><br><div class="textmanager"></div>-->

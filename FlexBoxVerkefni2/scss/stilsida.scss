@@ -61,10 +61,21 @@ ul, menu, dir {
   display: block;
   width: 20em;
 }
-
-
+.z{
+  z-index: 10;
+}
+.button{
+  background-color: #fffafa;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 .fela{
-    z-index: 9;
+    z-index: 8;
     list-style: none;
     margin: 0;
     display: -webkit-box;
@@ -80,7 +91,7 @@ ul, menu, dir {
     transition: all .35s;
     position: fixed;
     top: 0;
-    right: 130px;
+    right: 60px;
     margin-top: 0px;
 }
 .fela li{
@@ -313,10 +324,7 @@ body .wrapper{
   font-weight: 50;
   display: block;
 }
-.fela{
-  display: none;
-  list-style: none;
-}
+
 .annad{
     z-index: 9;
     list-style: none;
@@ -336,6 +344,8 @@ body .wrapper{
     top: 0;
     right: 0;
     margin-top: 0px;
+    font-size: 15px;
+    width: 100vw;
 }
   .menu{
     color: #3F3F3F;
@@ -347,12 +357,22 @@ body .wrapper{
     font-size: 40px;
   }
   /* The Overlay (background) */
+  .fela{
+  list-style: none;
+  display: block;
+}
+.opna{
+  display: none;
+  list-style: none;
+
+}
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    display: block;    
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
+    z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */

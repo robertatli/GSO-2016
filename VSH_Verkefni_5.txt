@@ -1,0 +1,21 @@
+Greinagerð VSH Verkefni 5 - Jól í Hörpu
+
+Vefsíðan inniheldur Upplýsingar um uppkomandi sýningar í Hörpu um jólin.
+Allar sýningar geta verið skoðaðar á sömu síðunni, linkað er á hverja sýningu í drop-down menu-inu (desktop) eða menu hnappinum (mobile).
+Hægt er að kaupa miða á hverja sýningu (linkað á tix.is þar sem er verið að selja miðana).
+Jólaleikurinn er um hvaða jólasvein þú ert, hægt er að fá annan jólasvein ef ýtt er á "annar jólasveinn".
+Hnappurinn "Harpan" vísar á heimasíðu hörpunnar þar sem hægt er að finna upplýsingar um fleiri sýningar og viðburði.
+Hnappurinn "PHP" vísar í php verkefni.
+Hnappurinn "VSH" vísar í heimasíðuna í þessu verkefni.
+Navigation bar-ið er gert með flex-box, er transitionaður og skiptist þegar er skipt í Mobile.(Þá verður drop down menuið að fullscreen overlay og takkinn sýningar breyttur í menu-icon.
+Allur vefurinn er á "http://tsuts.tskoli.is/2t/1802992039/FlexBoxVerkefni2/index.php".
+Parallax effectið er notað í desktop fyrir myndirnar, þær eru displayar venjulegar í mobile.
+Snjókoma er í desktop en slökkt er á henni í mobile vegna þess að síðan höktaði.
+
+Öll gögn eru í FlexBoxVerkefni2 á GitHub
+
+
+
+
+
+
